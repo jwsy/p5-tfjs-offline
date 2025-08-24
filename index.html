@@ -58,7 +58,7 @@
 
       // Load local TFJS MobileNet (LayersModel)
       await tf.ready();
-      const modelURL = new URL('/assets/models/mobilenet_v1_0.25_224/model.json', location.href).href;
+      const modelURL = new URL('assets/models/mobilenet_v1_0.25_224/model.json', location.href).href;
       model = await tf.loadLayersModel(modelURL);
 
       await waitForVideo();
@@ -141,7 +141,7 @@
     async function loadLabels() {
       if (LABELS_CACHE) return LABELS_CACHE;
       try {
-        const res = await fetch('/assets/models/mobilenet_v1_0.25_224/labels.json');
+        const res = await fetch('assets/models/mobilenet_v1_0.25_224/labels.json');
         if (res.ok) LABELS_CACHE = await res.json();   // array of 1000 strings
       } catch (_) {}
       return LABELS_CACHE;
