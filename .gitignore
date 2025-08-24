@@ -1,0 +1,7 @@
+test-local/.DS_Store
+test-local/fetch_tfjs_mobilenet.py
+test-local/fetch_tfjs_mobilenet.sh
+test-local/fetch_tfjs.sh
+test-local/assets/.DS_Store
+test-local/assets/models/.DS_Store
+.DS_Store
